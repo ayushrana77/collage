@@ -1,5 +1,5 @@
 const input = document.querySelector('input');
-
+const par = document.getElementById('demo')
 input.addEventListener('keypress', updateValue);
 
 function updateValue(e) {
@@ -8,10 +8,10 @@ function updateValue(e) {
         var val = e.target.value;
         if(val === "")
         {
-            console.log("true");
+            par.innerHTML = true;
         }else 
         {
-            console.log("false");
+            par.innerHTML = false
         }   
     }
 }

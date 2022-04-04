@@ -1,19 +1,31 @@
+const par = document.getElementById("showcode")
+var flag = true
 function myfun1(e)
 {
     e.preventDefault();
-    const fname = document.getElementById('fname').value
-    const lname = document.getElementById('lname').value
-    const age = document.getElementById('age').value
-    const email = document.getElementById('email').value
-    const adds = document.getElementById('adds').value
-    const phone = document.getElementById('phone').value
-    const occ = document.getElementById('occ').value
-    sessionStorage.setItem("fname",fname)
-    sessionStorage.setItem("lname",lname)
-    sessionStorage.setItem("age",age)
-    sessionStorage.setItem("email",email)
-    sessionStorage.setItem("adds",adds)
-    sessionStorage.setItem("phone",phone)
-    sessionStorage.setItem("occ",occ)
-    location.replace("../user_profile/user_profile.html")
+    const name = document.getElementById('name').value
+    // const age = document.getElementById('age').value
+    // const sex = document.getElementById('sex').value
+    // const adds = document.getElementById('adds').value
+    // const email = document.getElementById('email').value
+    // const password = document.getElementById('password').value
+    // const cpassword = document.getElementById('cpassword').value
+    // const alt_email = document.getElementById('alt_email').value
+    // const sorc = document.getElementById('sorc').value
+    const code = document.getElementById('code').value
+    if(code != 1123)
+    {
+        flag = false
+        alert("code is wrong")
+    }
+    if(name.lenght > 8)
+    {
+        flag = false
+        alert("Name length less the 8")
+    }
+    if(flag == true) 
+    {
+        location.replace("../login_page/login.html")
+    }
+    flag = true   
 }

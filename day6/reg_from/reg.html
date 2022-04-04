@@ -13,24 +13,13 @@
         <table>
             <tr>
                 <td>
-                    <label for="fname">First Name</label>
+                    <label for="name">First Name</label>
                 </td>
                 <td>
-                    <label for="fname">:</label>
+                    <label for="name">:</label>
                 </td>
                 <td>
-                    <input type="text" id="fname" name="fname" required><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="lname">Last Name</label>
-                </td>
-                <td>
-                    <label for="lname">:</label>
-                </td>
-                <td>
-                    <input type="text" id="lname" name="lname" required><br>
+                    <input type="text" id="name" name="name" required><br>
                 </td>
             </tr>
             <tr>
@@ -44,7 +33,28 @@
                     <input type="number" id="age" name="age" required><br>
                 </td>
             </tr>
+            <td>
+                <label for="sex">sex</label>
+            </td>
+            <td colspan="2">
+                <input type="radio" id="male" name="sex" maxlength="4" size="4"> 
+                male
+                <input type="radio" id="female" name="sex" maxlength="4" size="4">
+                female<br>
+            </td>
             <tr>
+                <tr>
+                    <td>
+                        <label for="adds">Address</label>
+                    </td>
+                    <td>
+                        <label for="adds">:</label>
+                    </td>
+                    <td>
+                        <!-- <textarea name="adds" id="adds" cols="45" rows="10"></textarea> -->
+                        <textarea name="adds" id="adds"  cols="45" rows="5"></textarea><br>
+                    </td>
+            </tr>
                 <td>
                     <label for="email">Email</label>
                 </td>
@@ -55,6 +65,28 @@
                     <input type="email" id="email" name="email" required><br>
                 </td>
             </tr>
+        <tr>
+            <td>
+                <label for="password">password</label>
+            </td>
+            <td>
+                <label for="password">:</label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="cpassword">Conf password</label>
+            </td>
+            <td>
+                <label for="cpassword">:</label>
+            </td>
+            <td>
+                <input type="password" id="cpassword" name="cpassword" required><br>
+            </td>
+        </tr>
             <tr>
                 <td>
                     <label for="alt_email">Alternate Email id</label>
@@ -66,56 +98,46 @@
                     <input type="email" id="alt_email" name="alt_email"><br>
                 </td>
             </tr>
+            
             <tr>
                 <td>
-                    <label for="adds">Address</label>
+                    <label for="sorc">Known this site through</label>
                 </td>
                 <td>
-                    <label for="adds">:</label>
+                    <label for="sorc">:</label>
                 </td>
                 <td>
-                    <!-- <textarea name="adds" id="adds" cols="45" rows="10"></textarea> -->
-                    <textarea name="adds" id="adds"  cols="45" rows="5"></textarea><br>
+                    <input type="checkbox" id="inte" name="sorc" value="internet">internert
+                    <input type="checkbox" id="news" name="sorc" value="newspaper">newspaper
+                    <input type="checkbox" id="fri" name="sorc" value="friend">friend
+                    <br>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="phone">Phone</label>
+                    <label for="code">code</label>
                 </td>
                 <td>
-                    <label for="phone">:</label>
+                    <label for="code">:</label>
                 </td>
                 <td>
-                    <input type="number" id="phone" name="phone"><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="occ">Occupation</label>
-                </td>
-                <td>
-                    <label for="occ">:</label>
-                </td>
-                <td>
-                    <input type="text" id="occ" name="occ"><br>
+                    <input type="code" id="code" name="code"><br>
                 </td>
             </tr>
             <tr>
                 <td colspan="3">
-                    <input type="radio" id="agree" name="agree" maxlength="4" size="4"> 
-                    I Agree & condition
-                    <input type="radio" id="notagree" name="agree" maxlength="4" size="4">
-                    I Not Agree & condition<br>
+                    <p id="showcode">1123</p>
                 </td>
             </tr>
             <tr>
                 <td colspan="3">
                     <button type="submit" >submit</button>
-                    <button type="reset" >reset</button><br>
+                    <button type="reset" >clear your entery</button><br>
                 </td>
             </tr>
         </table>
     </form>
+    <a href="../login_page/login.html">login Page</a>
     <script src="./reg.js"></script>
 </body>
 </html>

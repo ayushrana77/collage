@@ -1,5 +1,5 @@
 const input = document.querySelectorAll('input');
-
+const par = document.getElementById('demo')
 console.log(input);
 
 input[1].addEventListener('keypress', updateValue);
@@ -10,6 +10,6 @@ function updateValue(e) {
     {
         var str = input[0].value;
         var val = e.target.value;
-        console.log(str.substr(0,val));  
+        par.innerHTML=str.substr(0,val) 
     }
 }

@@ -3,5 +3,8 @@ const par = document.getElementById('demo')
 input.addEventListener('change', updateValue);
 function updateValue(e) {
     var val = e.target.value;
-    par.innerHTML =  isNaN(val)
+    var hid = val.substr(0,5);
+    var y = val.indexOf('@')
+    hid += '......'+val.substring(y)
+    par.innerHTML =  hid
 }

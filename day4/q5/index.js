@@ -1,5 +1,5 @@
 const input = document.querySelectorAll('input');
-
+const par = document.getElementById("demo")
 
 input[0].addEventListener('keypress', updateValue);
 
@@ -9,12 +9,11 @@ function updateValue(e) {
     {
         var val = e.target.value;
         var arr = val.split(" ");
-        console.log(arr[0]);
+        var ans = arr[0]
         for(let i = 1;i<arr.length;i++)
         {
-            console.log(" ");
-            console.log(arr[1][0]);
-            console.log(".");
+            ans += " "+arr[1][0]+"."
         } 
+        par.innerHTML = ans;
     }
 }
