@@ -1,0 +1,18 @@
+h3{
+    display: inline-block;
+    margin-left: 2%;
+    width: 10%;
+}
+h1{
+    text-align: center;
+}
+.box{
+    margin: 4%;
+    border: 1px solid;
+    height: 70vh;
+    width: 80vw;
+}
+p{
+    display: inline-block;
+    padding-left: 10%;
+}

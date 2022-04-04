@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reg.css">
+</head>
+<body>
+    <h1>REGISTATION FROM</h1>
+    <form onsubmit="myfun1(event)">
+        <table>
+            <tr>
+                <td>
+                    <label for="fname">First Name</label>
+                </td>
+                <td>
+                    <label for="fname">:</label>
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lname">Last Name</label>
+                </td>
+                <td>
+                    <label for="lname">:</label>
+                </td>
+                <td>
+                    <input type="text" id="lname" name="lname" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Age</label>
+                </td>
+                <td>
+                    <label for="age">:</label>
+                </td>
+                <td>
+                    <input type="number" id="age" name="age" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <label for="email">:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="alt_email">Alternate Email id</label>
+                </td>
+                <td>
+                    <label for="alt_email">:</label>
+                </td>
+                <td>
+                    <input type="email" id="alt_email" name="alt_email"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="adds">Address</label>
+                </td>
+                <td>
+                    <label for="adds">:</label>
+                </td>
+                <td>
+                    <!-- <textarea name="adds" id="adds" cols="45" rows="10"></textarea> -->
+                    <textarea name="adds" id="adds"  cols="45" rows="5"></textarea><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone</label>
+                </td>
+                <td>
+                    <label for="phone">:</label>
+                </td>
+                <td>
+                    <input type="number" id="phone" name="phone"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="occ">Occupation</label>
+                </td>
+                <td>
+                    <label for="occ">:</label>
+                </td>
+                <td>
+                    <input type="text" id="occ" name="occ"><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="radio" id="agree" name="agree" maxlength="4" size="4"> 
+                    I Agree & condition
+                    <input type="radio" id="notagree" name="agree" maxlength="4" size="4">
+                    I Not Agree & condition<br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="submit" >submit</button>
+                    <button type="reset" >reset</button><br>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="./reg.js"></script>
+</body>
+</html>

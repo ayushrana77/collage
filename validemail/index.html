@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <table border="5">
+            <tr>
+                <td>
+                    <label>first name</label>
+                    <input type="text" name="first_name" value=" " size="40" maxlength="11" /><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>last name</label>
+                    <input type="text" name="last_name" value=" " size="40" maxlength="11" /><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email</label>
+                    <input type="email" name="email" value=" " size="40" maxlength="11" placeholder="ayush121@gmail.com"/><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>sequ</label>
+                    <input type="number" name="seq" value=" " min="1" max="10" step="2"/><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>volume</label>
+                    <input type="range" name="vol" value=" " min="1" max="10" /><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>DOB</label>
+                    <input type="datetime-local" name="dob" value=" "/><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Feedback</label>
+                    <br>
+                    <textarea rows="5" cols="50" name="dreaction">Enter your feedback
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="maths" value="on" checked/>maths
+                    <input type="checkbox" name="physics" value="on"> physics
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" onclick="myFunction()" value="submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

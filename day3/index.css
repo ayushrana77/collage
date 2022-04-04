@@ -1,0 +1,26 @@
+
+ul{
+    margin-top: 30px;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+}
+li{
+    margin: 100px;
+    display: contents;
+}
+li a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main{
+ display: flex;
+}
+.imge img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
