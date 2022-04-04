@@ -1,0 +1,39 @@
+
+h1{
+    text-align: center;
+}
+th
+{
+    border: solid 1px;  
+}
+td{
+    border: solid 1px;
+    width: 200px;
+    text-align: center; 
+}
+table
+{
+    border: solid 2px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: green;
+}
+.head{
+    background-color: #82e68f;
+}
+.bot{
+    display:flex;
+    justify-content: center;
+}
+.text{
+    padding-left: 150px;
+    padding-right: 120px;
+}
+.btn{
+    color: white;
+    background-color: #019267;
+    width: 100px;
+    height: 40px;
+    border-radius: 10%;
+}

@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
 </head>
 <body>
     <h1>PAYMENT</h1>
+    <form >
+        <label for="card">Payment Through : </label><br>
+        <input type="radio" id="credit" name="card">Credit Card
+        <input type="radio" id="debit" name="card">Debit Card
+        <br>
+        <label for="bank">Bank : </label>
+        <input type="text" id="bank" name="bank"><br>
+        <label for="acc">Card Number : </label>
+        <input type="number" name="acc" id="acc"><br>
+        <label for="cvv">CVV : </label>
+        <input type="password" name="cvv" id="cvv"><br>
+        <label for="exp">Expiry Date: </label>
+        <input type="date" name="" id="">
+    </form>
 </body>
 </html>
