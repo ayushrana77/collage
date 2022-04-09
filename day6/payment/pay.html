@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <h3>Enjoy the shopping with special offere</h3>
+    <form onsubmit="myfun1(event)">
+        <label for="card">Payment Through : </label><br>
+        <input type="radio" id="credit" name="card">Credit Card
+        <input type="radio" id="debit" name="card">Debit Card
+        <br>
+        <label for="bank">Bank : </label>
+        <input type="text" id="bank" name="bank"><br>
+        <label for="acc">Card Number : </label>
+        <input type="number" name="acc" id="acc"><br>
+        <label for="cvv">CVV : </label>
+        <input type="password" name="cvv" id="cvv"><br>
+        <label for="exp">Expiry Date: </label>
+        <input type="date" name="exp" id="exp"><br>
+        <button type="submit" onsubmit="myfun1(event)">submit</button>
+        <button type="reset" >clear your entery</button><br>
+    </form>
+    <script src="./pay.js"></script>
+</body>
+</html>

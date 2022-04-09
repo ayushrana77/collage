@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
     <h1>Login in </h1>
+    <form onsubmit="myfun1(event)">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">First Name</label>
+                </td>
+                <td>
+                    <label for="name">:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" required><br>
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <label for="password">password</label>
+            </td>
+            <td>
+                <label for="password">:</label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="cpassword">Conf password</label>
+            </td>
+            <td>
+                <label for="cpassword">:</label>
+            </td>
+            <td>
+                <input type="password" id="cpassword" name="cpassword" required><br>
+            </td>
+        </tr>
+           
+            
+            
+            
+                <td colspan="3">
+                    <button type="submit" >submit</button>
+                    <button type="reset" >clear your entery</button><br>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="./login.js"></script>
 </body>
 </html>
